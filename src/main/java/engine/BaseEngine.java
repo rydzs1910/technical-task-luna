@@ -38,7 +38,7 @@ public class BaseEngine
     }
         private static WebDriver initFirefoxDriver()
         {
-            System.setProperty("webdriver.gecko.driver","src/main/resources/" + System.getProperty("driver", "geckodriver.exe"));
+            System.setProperty("webdriver.gecko.driver","src/main/resources/" + System.getProperty("driver", "geckodriver"));
             System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
             System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");
             System.out.println("Launching Firefox browser..");
@@ -49,7 +49,7 @@ public class BaseEngine
         {
             System.out.println("Launching google chrome with new profile..");
             System.setProperty("webdriver.chrome.driver", "src/main/resources/"
-                    + System.getProperty("driver", "chromedriver.exe"));
+                    + System.getProperty("driver", "chromedriver"));
             webDriver = new ChromeDriver();
             return webDriver;
         }
