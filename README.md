@@ -1,5 +1,5 @@
 # technical-task-luna
-# In order to run the project :
+In order to run the project :
 # Firefox browser(I used gecodriver v0.19.0 and Firefox 55.0):
 1. Clone the repository
 2. Download geckodriver from https://github.com/mozilla/geckodriver/releases and put the file to src/main/resources  
